@@ -1,0 +1,143 @@
+/* Custom Styles */
+body{
+    background: url("../Images/Background/4877368.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    
+}
+.navbar {
+   
+    background: transparent;
+    
+
+}
+
+.navbar-nav {
+    margin-right: 1rem;
+    margin-left: auto;
+    font-style: italic;
+    
+
+}
+.title {
+    padding-left: 20px;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    display: inline-block;
+    transition: transform 0.3s ease-in-out;
+    }
+    .title:hover {
+        transform: scale(1.1); /* Pop-up effect */
+    }
+    
+    .title::after {
+        content: '';
+        position: absolute;
+        width: 0;
+        height: 2px;
+        display: block;
+        margin-top: 5px;
+        right: 0;
+        background: #030101; /* Random color for underline */
+        transition: width 0.3s ease-in-out;
+    }
+    
+    .title:hover::after {
+        width: 100%; /* Underline expands */
+        left: 0;
+        right: auto;
+    }
+
+.nav-link {
+    transition: color 0.3s ease-in-out, transform 0.3s ease-in-out;
+}
+
+.nav-link:hover {
+    color: #FF5733; /* Random color for hover effect */
+    transform: scale(1.1); /* Slight pop-up effect */
+}
+
+.resume-viewer {
+    border: 1px solid #ccc;
+    padding: 10px;
+}
+
+/* Skills Heading Wave Effect */
+.skills-heading {
+    position: relative;
+    transition: transform 0.3s ease-in-out;
+}
+
+.skills-heading:hover {
+    animation: wave 0.30s infinite alternate;
+}
+
+@keyframes wave {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(10deg);
+    }
+}
+
+/* Skill Card Pop-up Effect */
+.skill-card {
+    background-color:whitesmoke;
+    transition: transform 0.3s ease-in-out;
+    display: inline-block;
+    border: white;
+}
+
+.skill-card:hover {
+    transform: scale(1.05); 
+}
+
+
+.card-title {
+    position: relative;
+    display: inline-block;
+    padding-bottom: 5px;
+}
+
+.card-title::after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 2px;
+    display: block;
+    background: skyblue;
+    transition: width 0.3s ease-in-out;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.skill-card:hover .card-title::after {
+    width: 100%; 
+} 
+
+/* About me page CSS */
+
+.about-container {
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 80vh;
+    margin-top: 50px;
+}
+.left-section, .right-section {
+    flex: 1;
+    padding: 20px;
+}
+.right-section img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 50%;
+}
+.info {
+    font-size: 1.2em;
+    line-height: 1.5;
+}
+.send-jd-button {
+    margin-top: 20px;
+}
