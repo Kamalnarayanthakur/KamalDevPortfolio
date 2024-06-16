@@ -218,3 +218,40 @@ ul {
 ul li {
     margin-bottom: 10px;
 }
+/* Contact Page */
+.eyes-and-hand {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.eyes {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 10px;
+}
+
+.eyes span {
+    width: 20px;
+    height: 20px;
+    background: white;
+    border-radius: 50%;
+    border: 2px solid black;
+    display: inline-block;
+    margin: 0 5px;
+}
+
+.hand {
+    font-size: 2rem;
+    animation: pointDown 1s infinite;
+}
+
+@keyframes pointDown {
+    0%, 100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(10px);
+    }
+}
