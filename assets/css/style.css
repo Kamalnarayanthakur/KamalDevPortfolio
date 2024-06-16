@@ -1,6 +1,6 @@
 /* Custom Styles */
 body{
-    background: url("../Images/Background/4877368.jpg");
+    background: url("../Images/Background/shapelined-_JBKdviweXI-unsplash.jpg");
     background-size: cover;
     background-repeat: no-repeat;
     
@@ -143,11 +143,6 @@ body{
 }
 
 /* Container to divide the page vertically */
-.container {
-    display: flex;
-    flex-wrap: wrap;
-    margin: 20px;
-}
 
 /* Left side styling */
 .left {
@@ -172,6 +167,40 @@ img {
 }
 
 /* Additional styling for text and lists */
+h2 {
+    color: #007BFF;
+}
+
+p {
+    font-size: 16px;
+    line-height: 1.6;
+}
+
+ul {
+    list-style-type: disc;
+    padding-left: 20px;
+}
+
+ul li {
+    margin-bottom: 10px;
+}
+/* Specific styling for the About Me card */
+.about-card {
+    
+    
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.about-card .card-img {
+    object-fit: cover;
+    height: 100%;
+    width: 100%;
+}
+
+.about-card .card-body {
+    padding: 20px;
+}
+
 h2 {
     color: #007BFF;
 }
