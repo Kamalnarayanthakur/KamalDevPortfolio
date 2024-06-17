@@ -61,6 +61,29 @@ body{
     padding: 10px;
 }
 
+@media (max-width: 767px) {
+    .navbar .navbar-nav {
+        text-align: center;
+    }
+
+    .card-body {
+        padding: 1rem;
+    }
+
+    .about-card {
+        flex-direction: column;
+    }
+
+    .about-card .col-md-4, .about-card .col-md-8 {
+        flex: 0 0 100%;
+        max-width: 100%;
+    }
+
+    .about-card .col-md-4 {
+        margin-bottom: 1rem;
+    }
+}
+
 /* Skills Heading Wave Effect */
 .skills-heading {
     position: relative;
