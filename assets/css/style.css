@@ -118,7 +118,7 @@ body{
 
 .card-title {
     position: relative;
-    display: inline-block;
+
     padding-bottom: 5px;
 }
 
@@ -277,4 +277,26 @@ ul li {
     50% {
         transform: translateY(10px);
     }
+}
+
+.card {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    transition: background-color 0.3s ease;
+    margin: 10px; /* Optional: Add some margin between cards */
+}
+
+.card:hover {
+    background-color: rgba(0, 0, 0, 0.7); /* Dark background on hover */
+    color: #fff; /* Optional: Change text color to white on hover */
+}
+
+.card img {
+    transition: opacity 0.3s ease;
+}
+
+.card:hover img {
+    opacity: 0.7; /* Make image slightly transparent on hover */
 }
